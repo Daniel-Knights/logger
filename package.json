@@ -2,7 +2,7 @@
   "name": "logger",
   "displayName": "Logger",
   "description": "Quick and simple console logging",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "DanielKnights",
   "license": "MIT",
   "icon": "images/logger-logo.png",
