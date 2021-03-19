@@ -7,11 +7,14 @@ export function activate(): void {
 
       if (selection.isEmpty) return
 
-      const value = document.getText(new Range(selection.start, selection.end))
+      const { start, end } = selection
+      const value = document.getText(new Range(start, end))
+      const line = document.lineAt(start.line)
+      const whitespace = line.text.match(/\s*/)
 
       editBuilder.insert(
-        new Position(selection.anchor.line + 1, 0),
-        `console.log(${value})\n`,
+        new Position(start.line + end.line - start.line + 1, 0),
+        `${whitespace && whitespace[0]}console.log(${value})\n`,
       )
     })
   })

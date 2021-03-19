@@ -6,6 +6,10 @@
   "publisher": "DanielKnights",
   "license": "MIT",
   "icon": "images/logger-logo.png",
+  "galleryBanner": {
+    "color": "#FFB200",
+    "theme": "light"
+  },
   "author": {
     "name": "Daniel Knights",
     "email": "danknights95@gmail.com",
