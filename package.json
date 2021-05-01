@@ -53,9 +53,9 @@
     "test-watch": "tsc -watch -p ./",
     "lint": "eslint src --ext ts",
     "checks": "npm run test-compile && npm run lint",
-    "publish-patch": "npm run checks && vsce publish patch",
-    "publish-minor": "npm run checks && vsce publish minor",
-    "publish-major": "npm run checks && vsce publish major"
+    "pub": "npm run checks && vsce publish patch",
+    "pub-minor": "npm run checks && vsce publish minor",
+    "pub-major": "npm run checks && vsce publish major"
   },
   "devDependencies": {
     "@types/node": "^12.11.7",
